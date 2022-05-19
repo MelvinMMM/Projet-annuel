@@ -1,0 +1,19 @@
+header > h1 {
+	text-align: center;
+	color: red ;
+}	
+
+li > a {
+	text-decoration : none;
+	color: black;
+
+}
+
+a:hover {
+	color : #FF0000 ;
+	text-decoration: none;
+}
+
+img {
+	background-color :green;
+}

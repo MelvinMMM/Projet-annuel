@@ -1,0 +1,146 @@
+html{
+	position: absolute;
+    height: 100%;
+    background-size: 100% ;
+    width:100%;  
+    color:black;
+}
+html:before {
+      content: "";
+      position: fixed;
+      height: 100%; width: 100%;
+      background: url('https://c.tenor.com/NpWm6ouFz-UAAAAC/super-mario-64.gif');
+      background-size: cover;
+      z-index: -1;  
+      -webkit-filter: blur(8px);
+   }
+
+body {
+	height: 100%;
+}
+
+body > footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+main {
+
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 70%;
+
+	background-color: #63D761;
+
+
+
+}
+
+
+
+.connexion {
+	display: flex;
+	justify-content: center;
+}
+
+.container > h1 {
+	margin-top: 25px;
+	font-size: 45px;
+}
+
+.col-3 {
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-left: 0% ;
+    display: flex;
+    justify-content: center;
+}
+
+.formconnexion {
+ 	display: flex;
+	justify-content: center;
+	height: 75px;
+	align-items: flex-start;
+	margin-bottom: 0px;
+}
+
+.formconnexion > .formconnexion_title {
+	display: flex;
+	flex-direction: column;
+}
+
+ .col-6 > p {
+	margin: 0 0px;
+	text-align: center;
+	font-size: 25px;
+	height: auto;
+}
+ form {
+	display: flex;
+	flex-direction: column;
+}
+
+.col-6 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	height: auto;
+}
+
+.sign_in {
+	margin-top: 25px;
+}
+
+.sign_in > a {
+	display: flex;
+	justify-content: space-around;
+
+	color: black;
+}
+
+.sign_in > a:hover {
+	display: flex;
+	justify-content: space-around;
+
+	color: #696969;
+}
+
+
+footer {
+	/*position: relative;
+ 	margin-top: 470px;*/
+ 	bottom: 0px;
+}
+
+footer > .fcontainer {
+	background-color: #63D761;
+
+	font-size: 25px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: flex-end;
+}
+
+footer > .fcontainer >.fcontainer_2 > p {
+	display: flex;
+	align-content: flex-end;
+	margin: auto auto;
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+footer > .fcontainer >.fcontainer_2 {
+	background-color: #000000;
+	margin-top: auto;
+    margin-bottom: auto;
+}
