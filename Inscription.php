@@ -67,7 +67,7 @@
     </body>
 </html>
 
-<<!-- form method="POST" action="verification.php">
+<form method="POST" action="verification.php">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -82,4 +82,4 @@
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form> -->
+</form>
