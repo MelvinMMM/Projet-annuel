@@ -1,11 +1,107 @@
 
+
 body{
 background: linear-gradient(173.88deg, #22D94E 0.42%, #EBEF40 99.74%);
 background-blend-mode: darken;
 
-}
-.container{
 
-    margin-top: 50px;
-    background:rgba(255, 255, 255, 0.53);
 }
+
+.intro-header { 
+    padding-bottom: 50px;
+   text-align: center;
+    background: url('https://grundigit.com/wp-content/uploads/2019/01/bigstock-Game-Over-Pixel-Art-Design-Wit-245243284.jpg') no-repeat center center fixed;
+    height: 768px;
+    width:1360px;
+ 
+}
+.bg-overlay {
+    background:rgba(0,0,0, 0.3);
+    height: 800px;
+  }
+.back{
+     margin-top: 50px;
+    background:rgba(255, 255, 255, 0.53);
+    width: 100%; 
+    margin-top: 20px;
+}
+
+.img-fluid{
+    border-radius: 10%;
+
+}
+#rond{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    background: url('https://tcf.admeen.org/game/17000/16898/400x246/happy-snakes.jpg');
+   background-size:contain;
+
+
+}
+ #triangle {
+  width: 350px;
+  height: 350px;
+  background:url('https://image.jeuxvideo.com/medias-md/157546/1575462265-6881-card.jpg') ;
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+
+}
+#carre{
+    width: 350px;
+    height: 350px;
+    background: url('https://cdn.pixabay.com/photo/2018/07/16/01/27/map-3541045__340.jpg');
+}
+.nosjeux h1{
+    text-align: center;
+}
+.back2{
+    background: #2797894D;
+    text-align: center;
+    height: 130px;
+
+}
+.back2 p{
+    margin-bottom: 20px;
+}
+.bouton{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin-bottom: 30px;
+}
+.bouton a , h3{
+    color: black;
+}
+.bouton a{
+   background: #A3AF2B;
+border-color: black;
+}
+.back3{
+    background: #C4C4C442;
+    text-align: center;
+    height: 90px;
+}
+.back3 h1{
+    text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+
+}
+.lesimages{
+  margin-left: 210px;
+    margin-top: 30px;
+    width: 100%; 
+    margin-bottom: 50px;
+}
+.lesimages img{
+    margin-bottom: 30px;
+}
+.mario {
+    width: 69.5%;
+}
+ .overcook2{
+    width: 69.5%;
+}
+ 
+
