@@ -11,8 +11,15 @@ background-blend-mode: darken;
     padding-bottom: 50px;
    text-align: center;
     background: url('https://grundigit.com/wp-content/uploads/2019/01/bigstock-Game-Over-Pixel-Art-Design-Wit-245243284.jpg') no-repeat center center fixed;
+<<<<<<< HEAD
+    height:100%;
+    width:100%;
+    margin: auto;
+    
+=======
     height: 768px;
     width:1360px;
+>>>>>>> ff77c45fea28fbee9bac7a709a2ba66a9c6e5408
  
 }
 .bg-overlay {
@@ -53,6 +60,10 @@ background-blend-mode: darken;
 }
 .nosjeux h1{
     text-align: center;
+<<<<<<< HEAD
+
+=======
+>>>>>>> ff77c45fea28fbee9bac7a709a2ba66a9c6e5408
 }
 .back2{
     background: #2797894D;
@@ -89,6 +100,32 @@ border-color: black;
 
 }
 .lesimages{
+<<<<<<< HEAD
+margin-left: auto;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%; 
+}
+.lesimages img{
+    margin-left: 200px;
+    
+    margin-bottom: 30px;
+
+
+}
+.mario {
+
+    width: 70%;
+}
+ .overcook2{
+    width: 70%;
+}
+.bande{
+    width: 70%;
+}
+.collection{
+    width: 70%;
+=======
   margin-left: 210px;
     margin-top: 30px;
     width: 100%; 
@@ -102,6 +139,7 @@ border-color: black;
 }
  .overcook2{
     width: 69.5%;
+>>>>>>> ff77c45fea28fbee9bac7a709a2ba66a9c6e5408
 }
  
 
