@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time to GAME</title>
-    <link rel="stylesheet" type="text/css" href="CSS/PageAccueil.css">
+    <link rel="stylesheet" type="text/css" href="CSS/2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!--   <script type="text/javascript" src="Js/page_acc.js"></script> -->
 </head>
@@ -16,7 +16,7 @@
 <!-- La transition overlay qui recouvre l'image quand on scroll la page -->
      
     <div class="bg-overlay">
-        <div class="intro-header"></div>
+        <div class="intro-header" style="background-size: 100%;"></div>
     </div>
            
 <div class="back"> <!-- la box arrière plan -->
@@ -41,11 +41,6 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
->>>>>>> ff77c45fea28fbee9bac7a709a2ba66a9c6e5408
 
 <div class="vectoriel">
     <div class="container">
@@ -88,25 +83,25 @@
 </div>
 
 <div class="lesimages">
-<<<<<<< HEAD
+
     <img class="bande"src="https://static.hitek.fr/img/actualite/ill_m/454553930/maxresdefault-1-e1421245106141-933x445.jpg" alt="image">
-=======
-    <img src="https://static.hitek.fr/img/actualite/ill_m/454553930/maxresdefault-1-e1421245106141-933x445.jpg" alt="image">
->>>>>>> ff77c45fea28fbee9bac7a709a2ba66a9c6e5408
+
+   
     <img class="mario" src="https://jeu.video/wp-content/uploads/2017/09/source-nintendo-life.png" alt="image">
     <img class="overcook2"src="https://lageekbox.fr/wp-content/uploads/2018/08/1fc4e515-cadf-41eb-9553-ae50557c6a49.png" alt="image">
 
         <div class="row mb-3"> <!-- mb= margin bottom, me=margin end, ms=margin start -->
             <div class="col-md-12 ">
-<<<<<<< HEAD
+
                 <img class="collection"src="images/image.png">
-=======
-                <img src="images/image.png">
->>>>>>> ff77c45fea28fbee9bac7a709a2ba66a9c6e5408
+
+                
+
             </div>
         </div>
 </div>
        
 <?php include('includes/footer.php');?>
+
 </body>
 </html>

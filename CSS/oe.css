@@ -32,11 +32,11 @@ main {
 	flex-direction: column;
 	justify-content: center;
 
-	margin-top: 0px;
+	margin-top: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	height: 70%;
+	height: 50%;
 
 	background-color: #63D761;
 
