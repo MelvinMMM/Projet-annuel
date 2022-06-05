@@ -35,10 +35,13 @@ main {
 	margin-top: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 16% 0%;
 	width: 50%;
 	height: 50%;
 
-	background-color: #63D761;
+	background-color: rgba(99, 215, 97, 0.8);
+
+	border-radius: 25px
 
 
 
@@ -64,45 +67,25 @@ main {
     justify-content: center;
 }
 
-.formconnexion {
- 	display: flex;
-	justify-content: center;
-	height: 75px;
-	align-items: flex-start;
-	margin-bottom: 0px;
-}
 
-.formconnexion > .formconnexion_title {
-	display: flex;
-	flex-direction: column;
-}
 
- .col-6 > p {
-	margin: 0 0px;
-	text-align: center;
-	font-size: 25px;
-	height: auto;
-}
  form {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
-.col-6 {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-end;
-	height: auto;
-}
 
 .sign_in {
-	margin-top: 25px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
 }
 
 .sign_in > a {
 	display: flex;
 	justify-content: space-around;
-
+	margin-left: 1%;
 	color: black;
 }
 
@@ -118,29 +101,4 @@ footer {
 	/*position: relative;
  	margin-top: 470px;*/
  	bottom: 0px;
-}
-
-footer > .fcontainer {
-	background-color: #63D761;
-
-	font-size: 25px;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-content: flex-end;
-}
-
-footer > .fcontainer >.fcontainer_2 > p {
-	display: flex;
-	align-content: flex-end;
-	margin: auto auto;
-	font-size: 25px;
-	color: #FFFFFF;
-}
-
-footer > .fcontainer >.fcontainer_2 {
-	background-color: #000000;
-	margin-top: auto;
-    margin-bottom: auto;
 }
