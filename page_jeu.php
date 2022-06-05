@@ -13,25 +13,23 @@
 	<main>
 		<?php include('includes/header.php');?>
 
-			<nav class="navbar navbar-expand-md navbar-light bg-light">
-				<div class="container-fluid">
-			    <ul class="navbar-nav">
+		<div id="mySidenav" class="sidenav">
+  			<a id="closeBtn" href="#" class="close">&times;</a>
+ 				<ul>
+    				<li><a href="#">Jeu 1</a></li>
+    				<li><a href="#">Jeu 2</a></li>
+    				<li><a href="#">Jeu 3</a></li>
+  				</ul>
+		</div>
 
-			      <li class="nav-item">
-			      	<a class="nav-link active" href="#">Jeu 1</a>
-			      </li>
-
-			      <li class="nav-item">
-			      	<a class="nav-link active" href="#">Jeu 2</a>
-			      </li>
-
-			      <li class="nav-item">
-			      	<a class="nav-link active" href="#">Jeu 3</a>
-			      </li>
-
-			    </ul>
-			    </div>
-	 		</nav>
+		<a href="#" id="openBtn">
+  			<span class="burger-icon">
+   			<span></span>
+   			<span></span>
+    		<span></span>
+  			</span>
+		</a>
+		
 
 				<div class="row">
 					<div class="col-4"></div>
@@ -76,6 +74,7 @@
 
 
 	</main>
+	<script type="text/javascript" src="Js/menu.js"></script>
 </body>
 </html>
 

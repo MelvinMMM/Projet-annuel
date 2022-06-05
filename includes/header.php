@@ -5,7 +5,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light justify-content-around">
 
-            <a class="navbar-brand ms-5" href="Accueil.php">Accueil</a>
+            <a class="navbar-brand ms-5" href="index.php">Accueil</a>
 
             <a class="navbar-brand ms-5" href="Inscription.php">Inscription</a>
 
