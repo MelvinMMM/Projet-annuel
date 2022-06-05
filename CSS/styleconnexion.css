@@ -17,6 +17,8 @@ html:before {
 
 body {
 	height: 100%;
+	width: 100%;
+	
 }
 
 body > footer {
@@ -29,68 +31,36 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	margin-top: 5%;
 	margin-left: 25%;
 	margin-right: 25%;
-	width: 50%;
+	margin: 5% 35%;
+	width: 30%;
 	height: 30%;
-
-	background-color: #63D761;
-	border-radius: 50%;
-
-
+	background-color: rgba(99, 215, 97, 0.8);
+	border-radius: 25px
 }
-
+form {display: flex;
+	flex-direction: column;
+	align-items: center;}
 
 
 .connexion {
 	display: flex;
 	justify-content: center;
-	
 }
 
-
-.formconnexion {
- 	display: flex;
-	justify-content: center;
-	height: 75px;
-	align-items: flex-start;
-	margin-bottom: 0px;
-}
-
-.formconnexion > .formconnexion_title {
-	display: flex;
-	flex-direction: column;
-}
-
-.formconnexion > .formconnexion_title > p {
-	margin: 0 15px;
-	text-align: right;
-	font-size: 25px;
-}
-
-.formconnexion > form {
-	display: flex;
-	flex-direction: column;
-}
-
-.secoco > input{
-	display: flex;
-	justify-content: center;
-}
-
-.w-50 {
-    margin-left: 25%;
-}
 
 .sign_in {
-	margin-top: 25px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
 }
 
 .sign_in > a {
 	display: flex;
 	justify-content: space-around;
+	margin: 0% 1%;
 
 	color: black;
 }
@@ -102,41 +72,11 @@ main {
 	color: #696969;
 }
 
-
-input {
-	margin-top: 5px;
-	margin-bottom: 50px;
-}
-
 footer {
 	/*position: relative;
  	margin-top: 470px;*/
  	bottom: 0px;
 }
 
-footer > .fcontainer {
-	background-color: #63D761;
-
-	font-size: 25px;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-content: flex-end;
-}
-
-footer > .fcontainer >.fcontainer_2 > p {
-	display: flex;
-	align-content: flex-end;
-	margin: auto auto;
-	font-size: 25px;
-	color: #FFFFFF;
-}
-
-footer > .fcontainer >.fcontainer_2 {
-	background-color: #000000;
-	margin-top: auto;
-    margin-bottom: auto;
-}
 
 
