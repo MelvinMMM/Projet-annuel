@@ -1,5 +1,8 @@
 <?php 
-
+/* La table s'appelle Joueurs
+et les colonnes sont écritent
+à la ligne 74
+*/
 
 if(isset($_POST['email']) && !empty($_POST['email'])){
 	setcookie('email', $_POST['email'],time() + 24 * 3600);
@@ -9,8 +12,14 @@ if(
 	|| empty($_POST['email'])
 	|| !isset($_POST['mdp'])
 	|| empty($_POST['mdp'])
+	|| !isset($_POST['nom'])
+	|| empty($_POST['nom'])
+	|| !isset($_POST['prenom'])
+	|| empty($_POST['prenom'])
+	|| !isset($_POST['pseudo'])
+	|| empty($_POST['pseudo'])
 ){
-	header('location: inscription.php?message=vous devez remplir les 2 champs.&type=danger');
+	header('location: inscription.php?message=vous devez remplir les 5 champs.&type=danger');
 	exit; 
 }
 
@@ -20,15 +29,10 @@ if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 	exit;
 }
 
-if(strlen($_POST['mdp']) < 6 || strlen($_POST['mdp']) > 12){
-	header('location: inscription.php?message=Le message doit comporter entre 6 et 12 caracteres.&type=danger');
-	exit;
-
-}
 include('includes/db.php');
 
 
-$q = 'SELECT id FROM users WHERE email = :email';
+$q = 'SELECT id FROM joueurs WHERE email = :email';
 $req = $bdd->prepare($q);
 $req->execute(['email' => $_POST['email']]);
 
@@ -40,60 +44,38 @@ if(!empty($results)){
 	exit;
 }
 
- 
-if($_FILES['image'] ['error'] != 4){ 
+$q = 'SELECT id FROM joueurs WHERE pseudo = :pseudo';
+$req = $bdd->prepare($q);
+$req->execute(['pseudo' => $_POST['pseudo']]);
 
-	
-	$acceptable = [
-		'image/gif ',
-		'image/png',
-		'image/jpeg'
-	];
 
-	if(!in_array($_FILES['image']['type'], $acceptable)){
-	header('location: inscription.php?message=Fichier de type incorrect.&type=danger');
+$results = $req->fetchall();
+
+if(!empty($results)){
+	header('location: inscription.php?message=Pseudo déjà utilisée.&type=danger');
+	exit;
 }
 
-$maxSize = 2 * 1024 * 1024; 
+$test = $_POST['mdp'];
+$pattern = "/^[^0-9][A-Z][a-z][0-9]/";
+
+$res = preg_match($pattern, $test);
 
 
-	if($_FILES['image']['size'] > $maxSize){
-	header('location: inscription.php?message=Fichier trop lourd 2Mo max.&type=danger');
+if(strlen($_POST['mdp']) < 8 || $res == 0){
+	header('location: inscription.php?message=Le message doit comporter entre 8 caracteres, 1 Maj, 1 Min et 1 Chiffre.&type=danger');
+	exit;
 }
 
-
-$chemin = 'uptloads';
-
-	if(!file_exists($chemin)){	
-	mkdir($chemin);
-}
-
- $filename = $_FILES['image']['name'];
- $destination = $chemin . '/' . $filename;
-
-
-$array = explode('.', $filename); 
-$extension = end($array); 
-
-
-
-$filename = 'image' . time() . '.' . $extension;
-
-$destination = $chemin . '/' . $filename;
-
-
-
- move_uploaded_file($_FILES['image']['tmp_name'], $destination);
-
-}
-
-
-$q = 'INSERT INTO users (email, password) VALUES (:email, :mdp)';
+$q = 'INSERT INTO joueurs (email, nom, prenom, pseudo, password) VALUES (:email, ;nom, ;prenom, ;pseudo, :mdp)';
 $req = $bdd->prepare($q);
 $succes = $req->execute([
 						'mdp' => hash('sha512',$_POST['mdp']),
 						'email' => $_POST['email'],
-						'image' => isset($filename) ? $filename : ''
+						'nom' => $_POST['nom'],
+						'prenom' => $_POST['prenom'],
+						'pseudo' => $_POST['pseudo'],
+						'sexe' => $_POST['sexe']
 						]);
 
 
@@ -106,3 +88,4 @@ header('location: index.php?message=Compte crée avec succès !&type=success');
 exit;
 
 ?>
+/************ Il faut renommer la page d'accueil en index ************/
