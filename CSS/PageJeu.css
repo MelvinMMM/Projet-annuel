@@ -1,7 +1,7 @@
-header > h1 {
+/*header > h1 {
 	text-align: center;
 }	
-
+*/
 
 /*a:hover {
 	color : #FF0000 ;
@@ -9,18 +9,21 @@ header > h1 {
 	text-decoration: underline;
 }*/
 
-img {
-	background-color :green;
-}
 
 /*ul {
   list-style: none;
 }*/
 
 body {
-	overflow-x : hidden;
 	background: linear-gradient(cyan, yellow);
 }
+
+p{
+  height: 150px;
+  width: 150px;
+  background: white;
+}
+
 
 
 .sidenav {
@@ -34,9 +37,6 @@ body {
   padding-top: 60px;
   transition: left 0.5s ease;
 }
-
-
-/*// Buger menu */
 
 .sidenav ul {
   list-style-type: none;
@@ -64,7 +64,7 @@ body {
 }
 
 /* Close btn */
-.sidenav .close {
+.sidenav.close {
   position: absolute;
   top: 0;
   right: 25px;

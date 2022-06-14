@@ -70,7 +70,7 @@ if(strlen($_POST['mdp']) < 8 || $res == 0){
 $q = 'INSERT INTO joueurs (email, nom, prenom, pseudo, password) VALUES (:email, ;nom, ;prenom, ;pseudo, :mdp)';
 $req = $bdd->prepare($q);
 $succes = $req->execute([
-						'mdp' => hash('sha512',$_POST['mdp']),
+						'mdp' => hash('sha512',$_POST['mdp']), /*'sha256' plus opti*/ 
 						'email' => $_POST['email'],
 						'nom' => $_POST['nom'],
 						'prenom' => $_POST['prenom'],
