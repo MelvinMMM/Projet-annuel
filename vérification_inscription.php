@@ -84,7 +84,7 @@ if (!$succes){
 }
 
 
-header('location: accueil.php?message=Compte crée avec succès !&type=success');
+header('location: page_jeu.php?message=Compte crée avec succès !&type=success');
 exit;
 
 ?>
