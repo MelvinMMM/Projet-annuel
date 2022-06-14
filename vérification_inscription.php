@@ -57,7 +57,7 @@ if(!empty($results)){
 }
 
 $test = $_POST['mdp'];
-$pattern = "/^[^0-9][A-Z][a-z][0-9]/";
+$pattern = "/^[^0-9][A-Z][a-z]|[0-9]/";
 
 $res = preg_match($pattern, $test);
 
@@ -67,7 +67,7 @@ if(strlen($_POST['mdp']) < 8 || $res == 0){
 	exit;
 }
 
-$q = 'INSERT INTO joueurs (email, nom, prenom, pseudo, password) VALUES (:email, ;nom, ;prenom, ;pseudo, :mdp)';
+$q = 'INSERT INTO joueurs (email, nom, prenom, pseudo, mdp, sexe) VALUES (:email, :nom, :prenom, :pseudo, :mdp, :sexe)';
 $req = $bdd->prepare($q);
 $succes = $req->execute([
 						'mdp' => hash('sha512',$_POST['mdp']), /*'sha256' plus opti*/ 
@@ -84,7 +84,7 @@ if (!$succes){
 }
 
 
-header('location: index.php?message=Compte crée avec succès !&type=success');
+header('location: accueil.php?message=Compte crée avec succès !&type=success');
 exit;
 
 ?>

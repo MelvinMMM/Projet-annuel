@@ -5,19 +5,27 @@
 
         <nav class="navbar navbar-expand-lg navbar-light justify-content-around">
 
-            <a class="navbar-brand ms-5" href="index.php">Accueil</a>
+          <?php $class = $title = 'Accueil' ? 'active' : ''; ?>
+              <a class="nav-link <?= $class ?>" href="index.php">Accueil</a>
 
-            <a class="navbar-brand ms-5" href="Inscription.php">Inscription</a>
+            <?php 
+            if(!isset($_SESSION['email']) || !$_SESSION['connect']){
+                $class = $title == 'Inscription' ? 'active' : '';
+                echo '<a class="nav-link ' . $class . '" href="inscription.php">Inscription</a>';
 
-            <a class="navbar-brand ms-5" href="Connexion.php">Connexion</a>
+                $class = $title == 'Connexion' ? 'active' : '';
+                echo '<a class="nav-link ' . $class . '" href="connexion.php">Connexion</a>';
+                $class = $title == 'Profil' ? 'active' : '';
 
-            <a class="navbar-brand ms-5" href="page_jeu.php">Jeux</a>
-
-            <a class="navbar-brand ms-5" href="Accueil.php">Description du site</a>
-
-            </ul>
-          </div>
+            }else if ($_SESSION['connect']){
+                $class = $title == 'Jeux' ? 'active' : '';
+                echo '<a class="nav-link ' . $class . '" href="page_jeu.php">jeux</a>';
+                echo '<a class="nav-link ' . $class . '" href="profile.php">Mon profil</a>';
+                $class = $title == 'Deconnexion' ? 'active' : '';
+                echo '<a class="nav-link" href="deconnexion.php">Déconnexion</a>';
+            }
+            ?>
 
         </nav>
-          
+
 </header>
