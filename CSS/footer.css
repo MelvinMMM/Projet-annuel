@@ -1,4 +1,4 @@
-footer p{
+footer {
 	background: linear-gradient(45deg,lime, cyan);
 	padding: 20px;
 	width: 100%;
@@ -6,4 +6,7 @@ footer p{
 	position: relative;
 }
 
-
+.lefooter {
+	display: flex ;
+	justify-content: space-around;
+}

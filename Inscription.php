@@ -26,11 +26,11 @@
                         <div class="row">
                                 <div class="col-6 form-check">
                                     <input class="form-check-input" type="radio" name="sexe" id="exampleRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="exampleRadios1">Femelle</label>
+                                    <label class="form-check-label" for="exampleRadios1">Femme</label>
                                     </div>
                                     <div class="col-6 form-check">
                                     <input class="form-check-input" type="radio" name="sexe" id="exampleRadios2" value="option2">
-                                    <label class="form-check-label" for="exampleRadios2">Mâle</label>
+                                    <label class="form-check-label" for="exampleRadios2">Homme</label>
                                     </div>
                         </div>
                     <div class="form-group w-75 me-5 ms-5">

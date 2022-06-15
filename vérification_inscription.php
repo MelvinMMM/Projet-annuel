@@ -88,4 +88,4 @@ header('location: accueil.php?message=Compte crée avec succès !&type=success')
 exit;
 
 ?>
-/************ Il faut renommer la page d'accueil en index ************/
+
