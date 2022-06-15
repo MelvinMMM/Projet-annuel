@@ -20,6 +20,6 @@
       exit;
    }
 
-
-
+   header('location: page_jeu.php');
+   exit;
 ?>
