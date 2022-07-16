@@ -3,11 +3,13 @@ header {
 	padding: 20px;	
 }
 
-a {
-	color:  black;
+a > nav {
+	padding: 0px!important;
 }
 
 a:hover {
 	transition: 1s;
-	color: white;
+	color: white!important;
 }
+
+

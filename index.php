@@ -1,3 +1,6 @@
+<?php
+session_start();
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,8 +103,8 @@
             </div>
         </div>
 </div>
-       
 <?php include('includes/footer.php');?>
-
+<script type="text/javascript">var audio = new Audio('beyond-light.mp3');
+audio.play();audio.loop();</script>
 </body>
 </html>

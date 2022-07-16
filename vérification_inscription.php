@@ -1,8 +1,5 @@
 <?php 
-/* La table s'appelle Joueurs
-et les colonnes sont écritent
-à la ligne 74
-*/
+
 
 if(isset($_POST['email']) && !empty($_POST['email'])){
 	setcookie('email', $_POST['email'],time() + 24 * 3600);
@@ -83,6 +80,60 @@ if (!$succes){
 	header('location: inscription.php?message=Erreur lors de l enregistrement.&type=danger');
 }
 
+$email = $_POST['email'];
+$login = $_POST['login'];
+ 
+$cle = md5(microtime(TRUE)*100000);
+ 
+$stmt = $dbh->prepare("UPDATE membres SET cle=:cle WHERE login like :login");
+$stmt->bindParam(':cle', $cle);
+$stmt->bindParam(':login', $login);
+$stmt->execute();
+ 
+$destinataire = $email;
+$sujet = "Activer votre compte" ;
+$entete = "From: inscription@votresite.com" ;
+ 
+$message = 'Bienvenue sur VotreSite';
+ 
+http://http://www.supermka.online/activation.php?log='.urlencode($login).'&cle='.urlencode($cle).'
+ 
+mail($destinataire, $sujet, $message, $entete) ;
+
+$login = $_GET['log'];
+$cle = $_GET['cle'];
+ 
+$stmt = $dbh->prepare("SELECT cle,actif FROM membres WHERE login like :login ");
+if($stmt->execute(array(':login' => $login)) && $row = $stmt->fetch())
+  {
+    $clebdd = $row['cle'];   
+    $actif = $row['actif']; 
+  }
+ 
+if($actif == '1') 
+  {
+     echo "Votre compte est déjà actif !";
+  }
+else 
+  {
+     if($cle == $clebdd)   
+       {    
+          echo "Votre compte a bien été activé !";
+ 
+          // La requête qui va passer notre champ actif de 0 à 1
+          $stmt = $dbh->prepare("UPDATE membres SET actif = 1 WHERE login like :login ");
+          $stmt->bindParam(':login', $login);
+          $stmt->execute();
+       }
+     else
+       {
+          echo "Erreur ! Votre compte ne peut être activé...";
+       }
+  }
+
+session_start();
+
+$_SESSION['email'] = $_POST['email'];
 
 header('location: page_jeu.php?message=Compte crée avec succès !&type=success');
 exit;

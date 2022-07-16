@@ -2,7 +2,7 @@ footer {
 	background: linear-gradient(45deg,lime, cyan);
 	padding: 20px;
 	width: 100%;
-	bottom: 0;
+	bottom: 0!important;
 	position: relative;
 }
 

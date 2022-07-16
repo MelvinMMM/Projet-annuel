@@ -1,6 +1,6 @@
 <?php
 session_start();
-?>
+?> 
 
 <!DOCTYPE html>
 <html>
@@ -31,13 +31,11 @@ session_start();
 		    <span></span>
 		    <span></span>
 		  </span>
-		</a>
-				
-
-				<div class="row">
+		</a>	
+					<div class="row">
 					<div class="col-4"></div>
 					<div class="col-4 text-center">
-						<img class="w-75 h-75" src="Images/Astronomy Wallpaper.jpg"></img>
+						<img class="w-70 h-70" src="Images/jeu1.jfif"></img>
 					</div>	
 					<div class="col-4 text-left">
 						<p>
@@ -61,7 +59,49 @@ session_start();
 
 				<div class="row">
 					<div class="col-4 mx-auto text-center">
-						<p>Nom du jeu <br> JOUER </p> <br>
+						<strong><a class="btn" href="Jeu/Jeu1/jeu.html">Jouer</a></strong> 	
+						<p>Nom du jeu</p> 
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 mx-auto text-center">
+						<p>
+							COMMENTAIRE / NOTE
+						</p>
+					</div>	
+				</div>	
+
+
+				<div class="row">
+					<div class="col-4"></div>
+					<div class="col-4 text-center">
+						<img class="w-70 h-70" src="Images/jeu2.jfif"></img>
+					</div>	
+					<div class="col-4 text-left">
+						<p>
+							DESCRITPION DU JEU <br>
+							NIVEAU POSSIBLE : 3
+						</p>
+					</div>	
+				</div>	
+				<div class="row">
+					
+				</div>	
+
+				<div class="row">
+					<div class="col-4 mx-auto text-center">
+						<p>
+							Tableau Des Scores<br>
+							* Nom Du Joueur : Temps
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 mx-auto text-center">
+						<strong><a class="btn" href="Jeu/Jeu2/index.html">Jouer</a></strong> 	
+						<p>Nom du jeu</p> 
 					</div>
 				</div>
 
@@ -76,7 +116,8 @@ session_start();
 		<?php include('includes/footer.php'); ?>
 
 	<script type="text/javascript" src="JS/burger.js"></script>
-
+	<script type="text/javascript">var audio = new Audio('chiptune-20xx.mp3');
+audio.play();audio.loop();</script>
 	</main>
 </body>
 </html>

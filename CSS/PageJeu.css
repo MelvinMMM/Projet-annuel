@@ -1,25 +1,10 @@
-/*header > h1 {
-	text-align: center;
-}	
-*/
-
-/*a:hover {
-	color : #FF0000 ;
-	text-decoration: none;
-	text-decoration: underline;
-}*/
-
-
-/*ul {
-  list-style: none;
-}*/
-*{
+/**{
   overflow-x: none;
   scrollbar-width: none;
-}
+}*/
 
 body {
-	background: linear-gradient(cyan, yellow);
+	/*background: linear-gradient(cyan, yellow);*/
 }
 
 
@@ -31,8 +16,8 @@ body {
   top: 0;
   left: -250px;
   background-color: white;
-  padding-top: 60px;
   transition: left 0.5s ease;
+  padding: 0;
 }
 
 .sidenav ul {
@@ -43,7 +28,7 @@ body {
 
 /* Sidenav menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 15px 15px 15px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -52,7 +37,7 @@ body {
 }
 
 .sidenav a:hover {
-  color: #111;
+  color: red;
 }
 
 /* Active class */
@@ -74,4 +59,17 @@ body {
   height: 5px;
   background-color: black;
   margin: 6px 0;
+}
+
+.btn{
+  color : !important #FF00FF;
+}
+
+img{
+  height: 180px;
+  width: 200px;
+}
+
+footer img{
+  height: 60px;
 }
